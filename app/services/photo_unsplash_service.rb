@@ -7,7 +7,7 @@ class PhotoUnsplashService
 
   def self.top_five (params)
     params[:per_page] = 30
-    
+
     @photos = self.search(params)
 
     @photos.sort! { |a, b| b.likes <=> a.likes }

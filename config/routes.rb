@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/random', to: 'photo_unsplash#search'
+  get '/top_five', to: 'photo_unsplash#top_five'
 end
